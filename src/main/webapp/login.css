@@ -1,0 +1,477 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: url(hotel10.jpg) no-repeat; */
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    /* background-color: rgb(240, 109, 83); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    user-select: none;
+    color: #fff;
+}
+
+.la1{
+	font-weight:bolder;
+margin-left: 30px;
+margin-top: 20px;
+color:  rgb(225, 233, 239);
+}
+#lab2{
+	margin-left: 50px;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.navigation a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 580px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    transition:height .2s ease;
+    margin-top: 130px;
+}
+
+
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: black;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.wrapper .form-box {
+    margin-left:40px;
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper.form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.form-box.register {
+    position: absolute;
+    transition: none;
+}
+  
+
+.wrapper .form-box.register {
+    transition: transform .18s ease;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color:  rgb(225, 233, 239);
+    text-align: center;
+
+}
+
+.input-box {
+    position: relative;
+    width: 280px;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgb(225, 233, 239);
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(225, 233, 239);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: rgb(225, 233, 239);
+    line-height: 57px;
+
+}
+
+.remember-forgot {
+    font-size: 0.9em;
+    color: rgb(225, 233, 239);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: rgb(225, 233, 239);
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: rgb(225, 233, 239);
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.login-register {
+    font-size: 0.9em;
+    color: rgb(225, 233, 239);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: rgb(225, 233, 239);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.point1{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 60px;
+    border: 2px solid red;
+    background-image: url(hotel9.jpg);
+    margin-top: 500px;
+    margin-left: 400px;
+    animation-name: point1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.point1:hover{
+    animation-play-state: paused;
+}
+.point2{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    border: 2px solid rgb(137, 10, 118);
+    background-image: url(hotel5.jpg);
+    margin-top: 500px;
+    margin-right: 1000px;
+    animation-name: point2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.point2:hover{
+    animation-play-state: paused;
+}
+.point3{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 80px;
+    border: 2px solid rgb(15, 116, 67);
+    background-image: url(hotel6.jpg);
+    margin-bottom: 500px;
+    margin-right: 700px;
+    animation-name: point3;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+.point3:hover{
+    animation-play-state: paused;
+}
+
+.point4{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border: 2px solid rgb(196, 194, 58);
+    background-image: url(hotel8.jpg);
+    margin-bottom: 500px;
+    margin-left: 500px;
+    animation-name: point4;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.point4:hover{
+    animation-play-state: paused;
+}
+
+.point5{
+    width: 15px;
+    height: 15px;
+    border-radius: 23px;
+    margin-left: 50px;
+    background-color: white;
+    background: linear-gradient(120deg, white 10%, orange 10%, rgb(143, 38, 124));
+    margin-top: 50px;
+    margin-right: 600px;
+    position: absolute;
+}
+.point6{
+    width: 25px;
+    height: 25px;
+    border-radius: 23px;
+    margin-left: 50px;
+    background-color: white;
+    background: linear-gradient(120deg, rgb(23, 43, 156) 10%, orange 10%, rgb(143, 38, 124));
+    margin-top: 50px;
+    margin-left: 700px;
+    position: absolute;
+}
+
+.point7{
+    width: 600px;
+    height: 50px;
+    /* border: 3px solid red; */
+    background-repeat: no-repeat;
+    border-radius: 23px;
+    margin-left: 50px;
+    margin-bottom: 500px;
+    position: fixed;
+    animation-name: po7;
+    animation-duration: 5ms;
+}
+
+.point7 p{
+align-items: center;
+color: #fff;
+font-weight: bolder;
+font-size: 35px;
+position: absolute;
+animation-name: point7;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+/* animation-play-state: paused; */
+}
+
+
+.point9{
+	height: 100px;
+	background-color: red;
+}
+
+@keyframes point7{
+    0%{
+       color: blue;
+    }
+    25%{
+        color: rgb(6, 167, 105);
+    }
+    50%{
+       color: red;
+    }75%{
+      color:rgb(113, 9, 84);
+    }100%{
+    color: rgb(174, 75, 9);
+    }
+}
+
+@keyframes point1{
+    0% {
+
+        transform: translateX(100px);
+    }
+
+    25% {
+        transform: translateX(-900px);
+    }
+
+    50% {
+        transform:translateY(-450px);
+    }
+
+    75% {
+        transform:translateX(300px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes point2{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateX(900px);
+    }40%{
+        transform: translateY(-500px);
+    }60%{
+        transform: translateX(1100px);
+    }80%{
+        transform: translateY(-600);
+    }
+    100%{
+        transform: translateX(-90);
+    }
+}
+
+@keyframes point3{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateX(900px);
+    }40%{
+        transform: translateY(500px);
+    }60%{
+        transform: translateX(-100px);
+    }80%{
+        transform: translateY(-30px);
+    }100%{
+        transform: translateX(600px);
+    }
+}
+
+@keyframes point4{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateX(300px);
+    }40%{
+        transform: translateY(500px);
+    }60%{
+        transform: translateX(-750px);
+    }80%{
+        transform: translateY(-40);
+    }100%{
+        transform: translateX(100px);
+    }
+}
+
+
+
+#log{
+	padding-bottom: 40px;
+}

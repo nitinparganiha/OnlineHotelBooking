@@ -1,0 +1,260 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: url(hotel10.jpg) no-repeat; */
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 2em;
+    user-select: none;
+    color: #fff;
+}
+.logo img{
+    height: 75px;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.navigation a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: black;
+    color: #162938;
+}
+
+#about1{
+background-color: #fff;
+   margin-top: 150px;
+   margin-left: 100px;
+   width:fit-content;
+}
+#about1 p{
+     color: black;
+     font-size: 25px;
+     font-weight: bolder;
+     font-family: cursive;
+}
+#future{
+    /* background-color: #fff; */
+ 
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#future P{
+    font-size: 20px;
+    /* font-weight: bolder; */
+    text-align: justify;
+    color: white;
+    padding-right: 60px;
+}
+#virat{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+#viratimg{
+    height: 50%;
+    width: 50%;
+}
+
+#foot1 {
+    border: 1px solid white;
+    color: white;
+    margin-top: 10px;
+}
+
+.foot1a ul {
+    display: flex;
+    list-style: none;
+}
+
+.foot1a ul li {
+    margin-left: 40px;
+}
+
+#img1 {
+    width: 120px;
+    border-radius: 10PX;
+    height: 75px;
+}
+
+#img2 {
+    width: 120px;
+    border-radius: 10PX;
+    height: 75px;
+}
+
+#img3 {
+    width: 120px;
+    border-radius: 10PX;
+    height: 75px;
+}
+
+#img4 {
+    width: 120px;
+    border-radius: 10PX;
+    height: 75px;
+}
+
+#img5 {
+    width: 120px;
+    border-radius: 10PX;
+    height: 75px;
+}
+
+#img6 {
+    width: 120px;
+    border-radius: 10PX;
+    height: 75px;
+}
+
+#img7 {
+    width: 120px;
+    border-radius: 10PX;
+    height: 75px;
+}
+
+#img8 {
+    width: 120px;
+    border-radius: 10PX;
+    height: 75px;
+}
+
+#img9 {
+    width: 120px;
+    border-radius: 10PX;
+    height: 75px;
+}
+#IHG{
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    /* position: absolute; */
+    /* margin-bottom: 200px; */
+}
+#hotelandresort{
+    margin-top: 13px;
+    font-size: 25px;
+}
+
+
+
+
+#foot2 {
+    margin-top: 30px;
+    
+}
+
+#share {
+    margin-left: 500px;
+}
+
+#share ul {
+    display: flex;
+}
+
+#share ul li img {
+    height: 55px;
+    margin-left: 50px;
+
+}
+
+#powerd {
+    display: flex;
+    margin-left: 550px;
+}
+
+#powerd p {
+    padding-top: 30px;
+}
+
+#powerd img {
+    height: 75px;
+    margin-left: 50px;
+}
+
+#india {
+    color: white;
+    display: flex;
+    word-spacing: 20px;
+    margin-left: 550px;
+    font-weight: bolder;
+}
+
+#hr {
+    margin-bottom: 40px;
+}
+#copyride{
+    color: white;
+    background-color: black;
+}
+#copyride p{
+    padding-left: 600px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

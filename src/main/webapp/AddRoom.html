@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+    <link rel="stylesheet" href="AddRoom.css">
+</head>
+<style>
+Body {
+    background-image: url(AddRoom.jpg);
+}
+#fd5{
+    color: #fff;
+    padding-top:150px;
+    padding-left: 200px;
+}
+#i13:hover{
+	background-color: orange;
+}
+</style>
+<body>
+
+<header>
+        <h2 class="logo"><img src="one8-logo.png" alt=""></h2>
+        <nav class="navigation">
+            <a href="AdminHome.html" id="home">Home</a>
+            <a href="About.html">About</a>
+            <a href="Service.html">Service</a>
+            <a href="Contact.html">Contact</a>
+           <!-- 
+            <button class="btnLogin-popup" id="btnLogin-popup">Login</button>
+             -->
+        </nav>
+    </header>
+    <div id="mid1">
+        <form action="adminaddroom" method="post" enctype='multipart/form-data'>
+            <div id="fd3">
+                <label for="" class="l7">Hotel Name</label>
+                <input type="text" class="i7" name="hotelname">
+                <label for="" class="l6">Location</label>
+                <input type="text" class="i6" name="location">
+                <label for="" class="l9">Custome Email</label>
+                <input type="text" class="i9" name="custemail" value="customer@gmail.com">
+            </div>
+            <div id="fd2">
+                <label for="" class="l4">Date From</label>
+                <input type="datetime" name="fromdate" placeholder="0000-00-00" class="i4">
+                <label for="" class="l5">Date To</label>
+                <input type="datetime" name="todate" placeholder="0000-00-00" class="i5">
+                <label for="" class="l2">Price</label>
+                <input type="text" name="price" class="i2">
+            </div>
+            <div id="fd1">
+            <label class="l1">Room No</label>
+            <input type="text" name="roomno" class="i1">
+            <label for="" class="l3">Count Room</label>
+            <input type="number" name="countroom" class="i3">
+           <label for="" class="l8">Flour</label>
+           <input type="text" type="number" name="flour" class="i8">
+        </div>
+
+
+
+        <div id="fd4">
+            <label for="" class="l10">Image 1</label>
+            <input type="file" name="image1" class="i10">
+            <label for="" class="l11">Image 2</label>
+            <input type="file" name="image2" class="i11">
+            <label for="" class="l12">Image 3</label>
+            <input type="file" name="image3" class="i12">
+        </div>
+        <div id="fd5">
+            <input type="submit" value="ADD" id="i13">
+        </div>
+        </form>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+<!-- 
+<form action="adminaddroom" method="post" enctype='multipart/form-data'>
+RoomNo:  <input type="text" name="roomno"><br><br>
+Price : <input type="text" name="price"><br><br>
+
+Date From: <input type="datetime" name="fromdate" placeholder="0000-00-00"><br><br>
+Date TO: <input type="datetime" name="todate" placeholder="0000-00-00"><br><br>
+
+Count room: <input type="number" name="countroom"><br><br>
+Location <input type="text" name="location"><br><br>
+Flour: <input type="number" name="flour"><br><br>
+Hotel Name: <input type="text" name="hotelname"><br><br>
+Customer Email: <input type="email" name="custemail" value="customer@gmail.com"><br><br>
+Image1: <input type="file" name="image1">
+Image2: <input type="file" name="image2">
+Image3: <input type="file" name="image3">
+
+<input type="submit" value="ADD">
+</form>
+ -->
+</body>
+</html>

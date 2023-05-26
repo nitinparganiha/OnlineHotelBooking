@@ -1,0 +1,205 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: url(hotel10.jpg) no-repeat; */
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 2em;
+    user-select: none;
+    color: #fff;
+}
+.logo img{
+    height: 75px;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.navigation a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: black;
+    color: #162938;
+}
+
+#wrap{
+    overflow:hidden;
+}
+#wrap #video{
+    /* background-color: white; */
+    /* border: 5px solid blue; */
+    
+}
+#wrap #video video{
+width: 100%;
+height: 100%;
+padding-left: 0px;
+/* overflow:hidden; */
+/* border: 5px solid green; */
+border-radius: 20px;
+
+
+}
+#welcome{
+    color:black;
+    margin-left: 550px;
+    position: absolute;
+    margin-top: 330px;
+}
+#welcome p{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#ser2{
+    display: flex;
+}
+#s2{
+    /* border: 5px solid red;     */
+}
+#s2 img{
+    width: 900px;
+    height: 600px;
+}
+#s1{
+    /* border:  5px solid green; */
+}
+#s1 p{
+    text-align: justify;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+}
+#smid1{
+    display: flex;
+}
+#serviceimg1{
+    width: 750px;
+    height: 400px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 20px;
+    /* background-image: url(service2.jpg); */
+}
+#serviceimg1 video{
+    width: 800px;
+    height: 800px;
+    display: none;
+    /* padding-right: 40px; */
+    /* padding-bottom: 530px; */
+}
+#serviceimg1:hover video {
+    display: inline;
+}
+#serviceimg2{
+    position: absolute;
+    width: 750px;
+    height: 400px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+
+#foot2{
+    margin-top: 30px;
+}
+#share{
+    margin-left: 500px;
+}
+#share ul{
+display: flex;
+}
+#share ul li img{
+    height: 55px;
+    margin-left: 50px;
+    
+}
+#powerd{
+    display: flex;
+    margin-left: 550px;
+}
+#powerd p{
+    padding-top: 30px;
+}
+#powerd img{
+height:  75px;
+margin-left: 50px;
+}
+#india{
+    color: white;
+    display: flex;
+    word-spacing: 20px;
+    margin-left: 550px;
+    font-weight:bolder;
+}
+#hr{
+    margin-bottom: 40px;
+}

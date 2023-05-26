@@ -1,0 +1,252 @@
+@charset "UTF-8";
+Body {
+    background-image: url(AddRoom.jpg);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+	        background-image: url(as22.jpg);
+    /* display: ; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: url(hotel10.jpg) no-repeat; */
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 2em;
+    user-select: none;
+    color: #fff;
+}
+
+.logo img {
+    height: 75px;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.navigation a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: black;
+    color: #162938;
+}
+#fd1{
+    padding-top: 20px;
+    color: #fff;
+    padding-top:20px;
+}
+
+#fd2{
+    color: #fff;
+    padding-top:20px;
+}
+#fd3{
+    color: #fff;
+    padding-top:200px;
+}
+#fd4{
+    color: #fff;
+    padding-top:20px;
+}
+#fd5{
+    color: #fff;
+    padding-top:250px;
+    padding-left: 200px;
+}
+.i1{
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+}
+.i2{
+    height: 30px;
+    width: 200px;
+    border-radius: 30px;
+}
+.i3{
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+}
+.i4{
+    height: 30px;
+    width: 200px;
+    border-radius: 30px;
+}
+.i5{
+    height: 30px;
+    width: 200px;
+    border-radius: 30px;
+}
+.i6{
+    height: 30px;
+    width: 300px;
+    border-radius: 30px;
+}
+.i7{
+    height: 30px;
+    width: 300px;
+    border-radius: 30px;
+}
+.i8{
+    height: 30px;
+    width: 150px;
+    border-radius: 30px;
+}
+
+
+.i9{
+    height: 30px;
+    width: 300px;
+    border-radius: 30px;
+}
+.i10{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+.i11{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+.i12{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#i13{
+	background-color: orange;
+    height: 35px;
+    width: 400px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.l1{
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+.l2{
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 145px;
+}
+.l3{
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 250px;
+}
+.l4{
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+.l5{
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 135px;
+}
+.l6{
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 25px;
+}
+.l7{
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+.l8{
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 195px;
+}
+.l9{
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 25px;
+}
+.l10{
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+.l11{
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 260px;
+}
+.l12{
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 246px;
+}

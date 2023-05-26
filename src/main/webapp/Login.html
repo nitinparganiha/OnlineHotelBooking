@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="login.css">
+<style type="text/css">
+.point8{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    border: 2px solid orange;
+    background-image: url(hotel6.jpg);
+    margin-bottom: 500px;
+    margin-right: 300px;
+    animation-name: point8;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes point8{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateX(-300px);
+    }40%{
+        transform: translateY(500px);
+    }60%{
+        transform: translateX(750px);
+    }80%{
+        transform: translateY(-80px);
+    }100%{
+        transform: translateX(-100px);
+    }
+}
+.point8:hover{
+    animation-play-state: paused;
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="SigninLogin.html" id="home">Home</a>
+            <a href="About.html">About</a>
+            <a href="Service.html">Service</a>
+            <a href="Contact.html">Contact</a>
+            <button class="btnLogin-popup" id="btnLogin-popup">Login</button>
+        </nav>
+    </header>   
+
+
+
+<div class="point1"></div>
+<div class="point2"></div>
+<div class="point3"></div>
+<div class="point4"></div>
+<div class="point5"></div>
+<div class="point6"></div>
+<div class="point7">
+<p>HELLO  WELCOME TO MY HOTEL</p>
+</div>
+<div class="point8"></div>
+<div class="point9"></div>
+    <div class="wrapper" id="wrapper">
+
+        <span class="icon-close" id="cl-btn">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+
+        <div class="form-box login" id="fm-box">
+            <h2 id="log">Login</h2>
+            <form action="rverify" method="post">
+            
+            <label id="lab1" class="la1">Admin:&nbsp;&nbsp;</label><input type="radio" name="rol" value="admin">
+            <label id="lab2" class="la1">User:&nbsp;&nbsp;</label><input type="radio" name="rol" value="user">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"> </ion-icon>
+                    </span>
+                    <input type="email" name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"> </ion-icon>
+                    </span>
+                    <input type="password" name="pass" required>
+                    <label>password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me </label>
+                    <a href="">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                
+            </form>
+            <div class="login-register">
+                <p>Don't have an account?<a class="register-link">Register</a></p>
+            </div>
+        </div>
+
+
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="usingn" method="post">
+                            <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"> </ion-icon>
+                    </span>
+                    <input type="email" name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" name="name" required>
+                    <label>Username</label>
+                </div>
+                
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="number" name="age" required>
+                    <label>Age</label>
+                </div>
+                
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" name="mobile" required>
+                    <label>Mobile</label>
+                </div>
+                
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"> </ion-icon>
+                    </span>
+                    <input type="password"  name="pass" required>
+                    <label>password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Agree to the terms and condition </label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+            <div class="login-register">
+                <p>Allready have an account?<a class="login-link">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+    const wrapper = document.getElementById('wrapper');
+    const loginLink = document.querySelector('.login-link');
+    const registerLink = document.querySelector('.register-link');
+    const register = document.getElementById('fm-box');
+
+    registerLink.addEventListener('click', () => {
+        register.style.marginLeft = "-370px";
+    });
+
+    const home=document.getElementById('home');
+    home.addEventListener('click',()=>{
+    register.style.transform="scale(0)";
+    });
+
+    const clBtn = document.getElementById('cl-btn');
+    clBtn.addEventListener('click', () => {
+        wrapper.style.transform = "scale(0)";
+    });
+
+    const lgBtn = document.getElementById('btnLogin-popup');
+    lgBtn.addEventListener('click', () => {
+        wrapper.style.transform = "scale(1)";
+    });
+
+    loginLink.addEventListener('click', () => {
+        register.style.marginLeft = "40px";
+    });
+
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<!--  
+<form action="rverify" method="post">
+<label>Admin:</label><input type="radio" name="rol" value="admin">
+<label>User:</label><input type="radio" name="rol" value="user">
+Email: <input type="email" name="email">
+Password: <input type="text" name="pass">
+<input type="submit" value="LogIn">
+</form>
+-->
+</body>
+</html>
