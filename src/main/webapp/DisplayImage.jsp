@@ -1,4 +1,4 @@
-<%@page import="Entity.NewAddImage"%>
+<%@page import="com.entity.NewAddImage"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Statement"%>
@@ -11,7 +11,7 @@
 <%@page import="javax.persistence.Persistence"%>
 <%@page import="javax.persistence.EntityManagerFactory"%>
 <%@page import="javax.persistence.*"%>
-<%@page import="Entity.Image"%>
+<%@page import="com.entity.Image"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>

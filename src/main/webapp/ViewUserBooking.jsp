@@ -1,6 +1,6 @@
-<%@page import="Entity.HotelRoom"%>
+<%@page import="com.entity.HotelRoom"%>
 <%@page import="java.util.List"%>
-<%@page import="Entity.User"%>
+<%@page import="com.entity.User"%>
 <%@page import="javax.persistence.Query"%>
 <%@page import="javax.persistence.EntityTransaction"%>
 <%@page import="javax.persistence.EntityManager"%>

@@ -1,11 +1,11 @@
 <%@page import="javax.persistence.EntityTransaction"%>
-<%@page import="Entity.HotelRoom"%>
+<%@page import="com.entity.HotelRoom"%>
 <%@page import="java.util.List"%>
 <%@page import="javax.persistence.Query"%>
 <%@page import="javax.persistence.EntityManager"%>
 <%@page import="javax.persistence.Persistence"%>
 <%@page import="javax.persistence.EntityManagerFactory"%>
-<%@page import="Entity.User"%>
+<%@page import="com.entity.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>

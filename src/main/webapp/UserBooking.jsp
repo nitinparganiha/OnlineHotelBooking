@@ -1,7 +1,7 @@
-<%@page import="Entity.NewAddImage"%>
+<%@page import="com.entity.NewAddImage"%>
 <%@page import="org.hibernate.internal.build.AllowSysOut"%>
-<%@page import="Entity.User"%>
-<%@page import="Entity.HotelRoom"%>
+<%@page import="com.entity.User"%>
+<%@page import="com.entity.HotelRoom"%>
 <%@page import="java.util.List"%>
 <%@page import="javax.persistence.*"%>
 <%@page import="javax.persistence.EntityTransaction"%>
